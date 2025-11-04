@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Google Auth</title>
+        <link rel="stylesheet" href="./popup-styles.css" />
+        <link rel="stylesheet" href="./global.css" />
+        <script src="popup.js" defer></script>
+    </head>
+    <body>
+        <div class="popup">
+            <h1 class="margin">Google Auth</h1>
+            <div class="input-container">
+                <input
+                    class="email margin"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                />
+                <p class="email-error error"></p>
+            </div>
+            <div class="input-container">
+                <input
+                    class="password margin"
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                />
+                <p class="password-error error"></p>
+            </div>
+
+            <button class="confirm-btn margin" type="button">Confirm</button>
+        </div>
+    </body>
+</html>

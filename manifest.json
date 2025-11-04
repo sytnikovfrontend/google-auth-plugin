@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Google Auth",
+    "version": "1.0",
+    "description": "Test google auth",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icons/google.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": ["http://*/*", "https://*/*"],
+    "permissions": ["scripting", "activeTab"]
+}
