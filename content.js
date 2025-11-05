@@ -5,15 +5,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 async function login(email, password) {
-    let el = await waitFor("#identifierId");
+    let el = await waitFor('input[type="email"][jsname="YPqjbf"]');
     setVal(el, email);
     document.querySelector("#identifierNext")?.click();
 
-    el = await waitFor('input[name="Passwd"]', 10000);
+    el = await waitFor('input[type="password"][jsname="YPqjbf"]', 10000);
     setVal(el, password);
-    el = await waitFor("#passwordNext", 10000);
-    const nextBtn = el.querySelector("button");
-    nextBtn?.click();
+    document.querySelector("#passwordNext")?.click();
 }
 
 function setVal(el, val) {
